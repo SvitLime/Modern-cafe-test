@@ -1,0 +1,130 @@
+.footer {
+    
+    position: relative;
+    padding: 32px 0;
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-dark);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    &__logo{
+        margin-bottom: 32px;
+    }
+
+    &__nav,
+    &__addres {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $bp-desktop){
+            flex-direction: row;
+            flex-basis: 50%;
+            text-align: left;
+            gap: 20px;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    &::before {
+        background-image: url(/img/footer-mobile1.png);
+        width: 92px;
+        height: 196px;
+        top: 84px;
+        @media screen and (min-width: $bp-desktop){
+            background-image: url(../img/bread-small.png);
+            width: 180px;
+            height: 120px;
+            top: auto;
+            bottom: 0;
+        }
+        
+    }
+    
+    &::after {
+        background-image: url(/img/footer-mobile2.png);
+        width: 134px;
+        height: 120px;
+        right: 0;
+        // bottom: -23px;
+        @media screen and (min-width: $bp-desktop){
+            background-image: url(../img/bread1.png);
+            width: 380px;
+            height: 190px;
+            right: 0;
+        }
+        
+    }
+
+    &__menu,
+    &__logo {
+        flex-grow: 1;
+    }
+
+    &__menu-link{
+        margin-bottom: 18px;
+
+            @media screen and (min-width: $bp-desktop) {
+                margin-bottom: 16px;
+            }
+    }
+
+
+    &__addres-list,
+    &__addres-info {
+        flex-grow: 1;
+    }
+
+    &__addres-link {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-light);
+        margin-bottom: 18px;
+        @media screen and (min-width: $bp-desktop){
+            margin-bottom: 16px;
+        }
+    }
+
+    &__addres-link:hover {
+
+        color: var(--color-brand);
+
+    }
+
+    &__addres-copyright {
+        font-size: 14px;
+        color: var(--color-brown-light);
+    }
+
+    &__addres-icon {
+        fill: var(--color-light);
+    }
+
+    &__addres-items{
+        justify-content: center;
+        display: flex;
+        gap: 22px;
+    }
+
+}
+
+
+
+

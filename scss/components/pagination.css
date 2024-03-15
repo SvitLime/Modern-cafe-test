@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.pagination__btn {
+  background-color: var(--color-brown-light);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+}
+.pagination__btn--active {
+  background-color: var(--color-brand);
+}/*# sourceMappingURL=pagination.css.map */

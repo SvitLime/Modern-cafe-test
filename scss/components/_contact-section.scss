@@ -1,0 +1,70 @@
+.contact-section {
+    padding: 20px 0 0;
+
+    @media screen and (min-width: $bp-desktop){
+        padding-bottom: 96px;
+    }
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            gap: 32px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        text-align: center;
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 63px;
+            text-align: start;
+        }
+    }
+
+    &__map {
+        flex-shrink: 0;
+        border: none;
+        margin: 0 -20px;
+        height: 176px;
+    
+        @media screen and (min-width: $bp-desktop) {
+            border-radius: 16px;
+            margin: auto;
+            width: 603px;
+            height: 595px;
+        }
+    
+    }
+
+    &__button {
+        font-size: 16px;
+        display: block;
+        margin: 0 auto 16px;
+        @media screen and (min-width: $bp-tablet){
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        color: var(--color-brand-dark);
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 18px;
+        }
+    }
+}
+
+
+// .contact-section__form-field{
+//     margin-bottom: 16px;
+
+//     @media screen and (min-width: $bp-desktop){
+//         margin-bottom: 24px;
+//     }
+// }
