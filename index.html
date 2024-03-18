@@ -237,14 +237,17 @@
                             <div class="contact-section__form-field input">
                                 <label class="input__label hidden" for="name">Ім’я</label>
                                 <input class="input__control" id="Name" name="name" placeholder="Ім’я" type="text">
+                                <div class="error"></div>
                             </div>
                             <div class="contact-section__form-field input">
                                 <label class="input__label hidden" for="tel">Телефон</label>
                                 <input class="input__control" id="tel" name="tel" placeholder="Телефон" type="tel">
+                                <div class="error"></div>
                             </div>
                             <div class="contact-section__form-field input">
                                 <label class="input__label hidden" for="email">Електронна пошта</label>
                                 <input class="input__control" id="email" name="email" placeholder="Електронна пошта" type="email">
+                                <div class="error"></div>
                             </div>
                             <button class="contact-section__button button form-button" type="submit">Замовити дзвінок</button>
                             <p class="form-condition">Натискаючи на кнопку я погоджуюсь 
@@ -324,17 +327,20 @@
             <form name="modal-contact-form" autocomplete="off">
                 <div class="modal__form-field input">
                     <label class="input__label hidden" for="name">Ім’я</label>
-                    <input class="input__control" id="Name" name="name" placeholder="Ім’я" type="text" minlength="2" maxlength="20" required>
+                    <input class="input__control" id="name" name="name" placeholder="Ім’я" type="text" minlength="2" maxlength="20" required>
+                    <div class="error"></div>
                 </div>
                 <div class="modal__form-field input">
                     <label class="input__label hidden" for="tel">Телефон</label>
                     <input class="input__control" id="tel" name="tel" placeholder="Телефон" type="tel" pattern="^\+[0-9]{12}">
+                    <div class="error"></div>
                 </div>
                 <div class="modal__form-field input">
                     <label class="input__label hidden" for="email">Електронна пошта</label>
                     <input class="input__control" id="email" name="email" placeholder="Електронна пошта" type="email" required>
+                    <div class="error"></div>
                 </div>
-                <button class="button form-button" type="submit" disabled>Замовити дзвінок</button>
+                <button class="button form-button" type="submit">Замовити дзвінок</button>
                 <p class="form-condition">Натискаючи на кнопку я погоджуюсь <a class="form-condition__link" href="#"> з політикою конфіденційності</a></p>
             </form>
         </div>
@@ -348,6 +354,7 @@
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/formvalid.js"></script>
 
 </body>
 </html>
